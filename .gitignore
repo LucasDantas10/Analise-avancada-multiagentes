@@ -1,1 +1,20 @@
-/.venv
+# Este repositório publica documentação Markdown; todo o restante é privado/local.
+*
+!*/
+
+# Ambientes, caches e dependências nunca devem ser percorridos nem publicados.
+.venv/
+.pytest_cache/
+**/__pycache__/
+node_modules/
+
+# Lista de publicação: fluxos, skills, análises e relatórios Markdown.
+!.gitignore
+!README.md
+!AGENTS.md
+!resumo.md
+!verificacao.md
+!.opencode/skills/*/SKILL.md
+!projeto-dashboard/ANALISE.md
+!projeto-dashboard/tests/PLANO.md
+!projeto-dashboard/relatorios/**/*.md
