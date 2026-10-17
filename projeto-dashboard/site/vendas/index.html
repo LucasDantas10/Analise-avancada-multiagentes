@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Painel interativo para explorar as vendas da papelaria de janeiro a março de 2026.">
+    <title>Papelaria | Painel de vendas</title>
+    <script>
+      try {
+        if (sessionStorage.getItem("papelaria-demo-auth") !== "ok") location.replace("../");
+      } catch (_erro) {
+        location.replace("../");
+      }
+    </script>
+    <link rel="stylesheet" href="../estilos.css">
+    <script src="../app.js" defer></script>
+  </head>
+  <body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+    <header class="topo">
+      <div class="topo-conteudo">
+        <a class="marca" href="#conteudo" aria-label="Papelaria — início do painel">
+          <span class="marca-simbolo" aria-hidden="true">
+            <svg viewBox="0 0 32 32" focusable="false"><path d="M8 4.5h11l5 5v17H8z"/><path d="M19 4.5v6h5M12 16h8M12 20h8"/></svg>
+          </span>
+          <span class="marca-texto"><strong>Papelaria</strong><span>PAINEL DE VENDAS</span></span>
+        </a>
+        <div class="acoes-topo"><div class="periodo-topo"><span class="ponto-ativo" aria-hidden="true"></span> Dados de 1 jan — 31 mar 2026</div><button id="sair-painel" class="botao-sair" type="button"><span aria-hidden="true">↪</span> Sair</button></div>
+      </div>
+      <div class="hero">
+        <div class="hero-conteudo">
+          <div>
+            <p class="sobretitulo hero-sobretitulo">DESEMPENHO COMERCIAL</p>
+            <h1>Vendas em perspectiva.</h1>
+            <p class="subtitulo">Explore resultados, compare categorias e acompanhe a evolução das vendas.</p>
+          </div>
+          <div class="hero-selo" aria-label="Período analisado: primeiro trimestre de 2026">
+            <span class="selo-icone" aria-hidden="true">↗</span>
+            <span><strong>1º trimestre</strong><small>2026 · 90 dias</small></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="conteudo" class="conteudo">
+      <section class="filtros cartao" aria-labelledby="titulo-filtros">
+        <div class="filtros-cabecalho">
+          <div class="titulo-bloco">
+            <span class="titulo-icone" aria-hidden="true">⌕</span>
+            <div><p class="sobretitulo">REFINE A ANÁLISE</p><h2 id="titulo-filtros">Filtros e busca</h2></div>
+          </div>
+          <button id="limpar-filtros" class="botao botao-limpar" type="button"><span aria-hidden="true">↺</span> Limpar tudo</button>
+        </div>
+        <div class="grade-filtros">
+          <div class="campo campo-busca">
+            <label for="busca-venda">Buscar venda</label>
+            <div class="campo-com-icone"><span aria-hidden="true">⌕</span><input id="busca-venda" type="search" autocomplete="off" placeholder="ID, produto, cidade, categoria ou pagamento"></div>
+            <small>Busca em todos os campos de texto da venda.</small>
+          </div>
+          <div class="campo"><label for="filtro-cidade">Cidade</label><select id="filtro-cidade" name="cidade"><option value="">Todas as cidades</option></select></div>
+          <div class="campo"><label for="filtro-categoria">Categoria</label><select id="filtro-categoria" name="categoria"><option value="">Todas as categorias</option></select></div>
+          <div class="campo campo-data"><label for="data-inicio">Data inicial</label><input id="data-inicio" type="date" min="2026-01-01" max="2026-03-31"></div>
+          <div class="campo campo-data"><label for="data-fim">Data final</label><input id="data-fim" type="date" min="2026-01-01" max="2026-03-31"></div>
+        </div>
+        <p id="erro-periodo" class="erro-periodo" role="alert" hidden>A data inicial não pode ser posterior à data final.</p>
+        <div class="filtros-rodape"><span class="dica-teclado"><span aria-hidden="true">↵</span> Os filtros atualizam o painel juntos</span><p id="resumo-filtros" class="texto-auxiliar" aria-live="polite">Carregando vendas…</p></div>
+      </section>
+
+      <section class="indicadores" aria-label="Indicadores de vendas">
+        <article class="indicador cartao indicador-destaque"><div class="indicador-topo"><span class="indicador-rotulo">Valor vendido</span><span class="indicador-icone icone-receita" aria-hidden="true">R$</span></div><p id="kpi-valor" class="indicador-valor" aria-live="polite">—</p><p class="indicador-nota">Valor bruto · não representa lucro</p></article>
+        <article class="indicador cartao"><div class="indicador-topo"><span class="indicador-rotulo">Vendas</span><span class="indicador-icone icone-vendas" aria-hidden="true">▤</span></div><p id="kpi-vendas" class="indicador-valor" aria-live="polite">—</p><p class="indicador-nota">Uma linha por venda identificada</p></article>
+        <article class="indicador cartao"><div class="indicador-topo"><span class="indicador-rotulo">Ticket médio</span><span class="indicador-icone icone-ticket" aria-hidden="true">↗</span></div><p id="kpi-ticket" class="indicador-valor" aria-live="polite">—</p><p class="indicador-nota">Valor vendido ÷ número de vendas</p></article>
+        <article class="indicador cartao"><div class="indicador-topo"><span class="indicador-rotulo">Unidades</span><span class="indicador-icone icone-unidades" aria-hidden="true">▦</span></div><p id="kpi-unidades" class="indicador-valor" aria-live="polite">—</p><p class="indicador-nota">Soma das quantidades vendidas</p></article>
+      </section>
+
+      <section class="graficos" aria-label="Gráficos de vendas">
+        <article class="cartao cartao-grafico"><div class="secao-titulo"><div><p class="sobretitulo">COMPARAÇÃO</p><h2>Valor vendido por categoria</h2></div><span class="etiqueta-grafico">R$</span></div><p class="descricao-grafico">Total bruto vendido em cada categoria.</p><div class="area-grafico"><svg id="grafico-categorias" role="img" aria-label="Gráfico de barras do valor vendido por categoria"></svg></div></article>
+        <article class="cartao cartao-grafico"><div class="secao-titulo"><div><p class="sobretitulo">EVOLUÇÃO</p><h2>Vendas ao longo do tempo</h2></div><span class="etiqueta-grafico">MÊS A MÊS</span></div><p class="descricao-grafico">Soma mensal do valor vendido.</p><div class="area-grafico"><svg id="grafico-mensal" role="img" aria-label="Gráfico de linha do valor vendido por mês"></svg></div></article>
+      </section>
+
+      <section class="cartao secao-tabela" aria-labelledby="titulo-tabela">
+        <div class="tabela-cabecalho"><div class="secao-titulo"><div><p class="sobretitulo">REGISTROS</p><h2 id="titulo-tabela">Detalhamento das vendas</h2></div><span id="contagem-tabela" class="etiqueta-contagem"></span></div>
+          <div class="acoes-tabela"><button id="exportar-csv" class="botao botao-secundario" type="button"><span aria-hidden="true">⇩</span> Exportar CSV</button><button id="imprimir-painel" class="botao botao-secundario" type="button"><span aria-hidden="true">▤</span> Imprimir / PDF</button></div>
+        </div>
+        <p id="mensagem-vazia" class="mensagem-vazia" role="status" hidden><span aria-hidden="true">⌕</span><strong>Nenhuma venda encontrada</strong><span>A busca e os filtros não correspondem a registros. Ajuste os critérios ou limpe tudo.</span></p>
+        <div class="envoltorio-tabela" tabindex="0" aria-label="Tabela de vendas ordenável; role horizontalmente para ver todas as colunas">
+          <table id="tabela-vendas">
+            <caption class="somente-leitor">Vendas individuais com os filtros atuais. Use os botões dos cabeçalhos para ordenar.</caption>
+            <thead><tr>
+              <th scope="col" aria-sort="descending"><button type="button" data-ordenar="data" aria-label="Ordenar por data"><span>Data</span><span class="indicador-ordem" aria-hidden="true">↓</span></button></th>
+              <th scope="col"><button type="button" data-ordenar="id_venda" aria-label="Ordenar por ID da venda"><span>ID</span><span class="indicador-ordem" aria-hidden="true">↕</span></button></th>
+              <th scope="col"><button type="button" data-ordenar="cidade" aria-label="Ordenar por cidade"><span>Cidade</span><span class="indicador-ordem" aria-hidden="true">↕</span></button></th>
+              <th scope="col"><button type="button" data-ordenar="categoria" aria-label="Ordenar por categoria"><span>Categoria</span><span class="indicador-ordem" aria-hidden="true">↕</span></button></th>
+              <th scope="col"><button type="button" data-ordenar="produto" aria-label="Ordenar por produto"><span>Produto</span><span class="indicador-ordem" aria-hidden="true">↕</span></button></th>
+              <th scope="col" class="alinhado-direita"><button type="button" data-ordenar="quantidade" aria-label="Ordenar por unidades"><span>Unidades</span><span class="indicador-ordem" aria-hidden="true">↕</span></button></th>
+              <th scope="col" class="alinhado-direita"><button type="button" data-ordenar="preco_unitario_centavos" aria-label="Ordenar por preço unitário"><span>Preço unit.</span><span class="indicador-ordem" aria-hidden="true">↕</span></button></th>
+              <th scope="col" class="alinhado-direita"><button type="button" data-ordenar="valor_venda_centavos" aria-label="Ordenar por valor vendido"><span>Valor vendido</span><span class="indicador-ordem" aria-hidden="true">↕</span></button></th>
+              <th scope="col"><button type="button" data-ordenar="forma_pagamento" aria-label="Ordenar por pagamento"><span>Pagamento</span><span class="indicador-ordem" aria-hidden="true">↕</span></button></th>
+            </tr></thead><tbody id="corpo-tabela"></tbody>
+          </table>
+        </div>
+        <div class="controles-paginacao" aria-label="Paginação da tabela">
+          <label class="tamanho-pagina" for="registros-por-pagina">Linhas por página<select id="registros-por-pagina"><option value="10">10</option><option value="25" selected>25</option><option value="50">50</option><option value="100">100</option><option value="0">Todas</option></select></label>
+          <div class="navegacao-paginas"><button id="pagina-anterior" class="botao-pagina" type="button" aria-label="Página anterior">← <span>Anterior</span></button><span id="pagina-atual" class="pagina-atual" aria-live="polite">Página 1</span><button id="pagina-proxima" class="botao-pagina" type="button" aria-label="Próxima página"><span>Próxima</span> →</button></div>
+        </div>
+        <p id="mensagem-exportacao" class="mensagem-acao" role="status" aria-live="polite"></p>
+        <div class="tabela-impressao" aria-hidden="true"><table><thead><tr><th>Data</th><th>ID da venda</th><th>Cidade</th><th>Categoria</th><th>Produto</th><th>Unidades</th><th>Preço unitário</th><th>Valor vendido</th><th>Pagamento</th></tr></thead><tbody id="corpo-tabela-impressao"></tbody></table></div>
+      </section>
+
+      <aside class="nota-metodologica" aria-labelledby="titulo-metodo"><span class="nota-icone" aria-hidden="true">i</span><div><h2 id="titulo-metodo">Sobre estes dados</h2><p><strong>Valor vendido não é lucro:</strong> é o valor bruto de quantidade × preço unitário; custos e despesas não estão na base. Cada linha representa uma venda identificada por <code>id_venda</code>. Ticket médio = valor vendido ÷ número de vendas. O período disponível é 1º de janeiro a 31 de março de 2026.</p><p>A base limpa já havia removido apenas duplicatas exatas, aparado espaços em cidades, padronizado categorias e preenchido pagamentos vazios como “Não informado”. Este painel não reaplica essas alterações.</p></div></aside>
+      <p id="erro-carregamento" class="erro-carregamento" role="alert" hidden>Não foi possível carregar os dados. Execute o preparo e abra o site por um servidor HTTP local.</p>
+    </main>
+    <footer class="rodape"><span>Fonte: <code>papelaria_limpa.csv</code></span><span>·</span><span>Visão gerencial · 1º tri de 2026</span></footer>
+  </body>
+</html>

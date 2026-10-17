@@ -1,0 +1,183 @@
+id_venda,data,cidade,categoria,produto,quantidade,preco_unitario,forma_pagamento
+V0001,2026-01-01,Santos,Livros,Livro de aventuras,4,42,Dinheiro
+V0002,2026-01-01,Sorocaba,Livros,Livro de receitas,4,55,Cartão
+V0003,2026-01-02,Campinas,Acessórios,Estojo,3,22,Dinheiro
+V0004,2026-01-02,Campinas,Acessórios,Mochila,1,95,
+V0005,2026-01-03,Campinas,Livros,Livro de aventuras,2,42,Cartão
+V0006,2026-01-03,Santos,Livros,Livro de receitas,2,55,Dinheiro
+V0007,2026-01-04,Sorocaba,Acessórios,Estojo,4,22,Cartão
+V0008,2026-01-04,Campinas,Papelaria,Caderno,3,18,Pix
+V0009,2026-01-05, Santos ,Acessórios,Mochila,4,95,Dinheiro
+V0010,2026-01-05,Campinas,Papelaria,Caneta,1,3.5,Dinheiro
+V0011,2026-01-06,Sorocaba,Papelaria,Caneta,1,3.5,Pix
+V0012,2026-01-06,Santos,acessórios,Estojo,3,22,Cartão
+V0013,2026-01-07,Santos,Papelaria,Caderno,2,18,Dinheiro
+V0014,2026-01-07,Campinas,Acessórios,Estojo,2,22,Cartão
+V0015,2026-01-08,Santos,Papelaria,Caneta,5,3.5,Pix
+V0016,2026-01-08,Campinas,Papelaria,Caderno,3,18,Dinheiro
+V0017,2026-01-09,Sorocaba,Livros,Livro de aventuras,2,42,Pix
+V0018,2026-01-09,Santos,Acessórios,Estojo,4,22,
+V0019,2026-01-10,Campinas,Papelaria,Caneta,4,3.5,Pix
+V0020,2026-01-10,Santos,Papelaria,Caneta,1,3.5,Cartão
+V0021,2026-01-11,Sorocaba,Acessórios,Mochila,2,95,Dinheiro
+V0022,2026-01-11,Campinas,Papelaria,Caneta,5,3.5,Pix
+V0023,2026-01-12,Santos,Livros,Livro de aventuras,1,42,Cartão
+V0024,2026-01-12,Santos,Livros,Livro de aventuras,3,42,Pix
+V0025,2026-01-13,Sorocaba,Papelaria,Caderno,1,18,Pix
+V0026,2026-01-13,Campinas,Acessórios,Estojo,3,22,Dinheiro
+V0027,2026-01-14,Santos,Livros,Livro de aventuras,4,42,Cartão
+V0028,2026-01-14,Campinas,Papelaria,Caneta,2,3.5,Cartão
+V0029,2026-01-15, Campinas ,Papelaria,Caderno,5,18,Pix
+V0030,2026-01-15,Santos,Acessórios,Mochila,5,95,Dinheiro
+V0031,2026-01-16,Campinas,Papelaria,Caneta,1,3.5,Cartão
+V0032,2026-01-16,Campinas,Livros,Livro de receitas,1,55,Cartão
+V0033,2026-01-17,Campinas,Papelaria,Caderno,5,18,Pix
+V0034,2026-01-17,Santos,acessórios,Estojo,1,22,Dinheiro
+V0035,2026-01-18,Sorocaba,Acessórios,Estojo,3,22,Cartão
+V0036,2026-01-18,Campinas,Livros,Livro de receitas,4,55,Pix
+V0037,2026-01-19,Sorocaba,Acessórios,Estojo,2,22,Dinheiro
+V0038,2026-01-19,Campinas,Acessórios,Mochila,5,95,Pix
+V0039,2026-01-20,Campinas,Papelaria,Caderno,1,18,Cartão
+V0040,2026-01-20,Campinas,Livros,Livro de receitas,5,55,Pix
+V0041,2026-01-21,Sorocaba,Acessórios,Estojo,1,22,Cartão
+V0042,2026-01-21,Sorocaba,Papelaria,Caneta,5,3.5,Pix
+V0043,2026-01-22,Campinas,Acessórios,Mochila,1,95,Cartão
+V0044,2026-01-22,Santos,Acessórios,Estojo,3,22,Dinheiro
+V0045,2026-01-23,Sorocaba,Papelaria,Caneta,2,3.5,Dinheiro
+V0046,2026-01-23,Campinas,Livros,Livro de aventuras,4,42,Pix
+V0047,2026-01-24,Santos,Papelaria,Caneta,5,3.5,Cartão
+V0048,2026-01-24,Sorocaba,Acessórios,Estojo,5,22,Pix
+V0049,2026-01-25, Santos ,Acessórios,Estojo,2,22,Dinheiro
+V0050,2026-01-25,Campinas,Acessórios,Mochila,2,95,Pix
+V0051,2026-01-26,Campinas,Papelaria,Caderno,5,18,Pix
+V0052,2026-01-26,Santos,Acessórios,Estojo,2,22,Pix
+V0053,2026-01-27,Campinas,Acessórios,Mochila,2,95,Dinheiro
+V0054,2026-01-27,Campinas,Livros,Livro de receitas,2,55,Dinheiro
+V0055,2026-01-28,Santos,Livros,Livro de aventuras,5,42,Dinheiro
+V0056,2026-01-28,Campinas,Livros,Livro de aventuras,3,42,Cartão
+V0057,2026-01-29,Santos,Livros,Livro de receitas,1,55,Cartão
+V0058,2026-01-29,Campinas,Acessórios,Mochila,4,95,Dinheiro
+V0059,2026-01-30,Sorocaba,Papelaria,Caneta,4,3.5,Pix
+V0060,2026-01-30,Campinas,Papelaria,Caderno,3,18,Dinheiro
+V0061,2026-01-31,Campinas,Papelaria,Caderno,2,18,Dinheiro
+V0062,2026-01-31,Campinas,Livros,Livro de aventuras,1,42,Dinheiro
+V0063,2026-02-01,Santos,Papelaria,Caneta,2,3.5,Dinheiro
+V0064,2026-02-01,Santos,Papelaria,Caneta,3,3.5,Dinheiro
+V0065,2026-02-02,Santos,Acessórios,Estojo,2,22,Pix
+V0066,2026-02-02,Santos,Papelaria,Caneta,5,3.5,Dinheiro
+V0067,2026-02-03,Campinas,Acessórios,Mochila,3,95,
+V0068,2026-02-03,Sorocaba,Acessórios,Mochila,4,95,Dinheiro
+V0069,2026-02-04, Campinas ,Papelaria,Caneta,4,3.5,Pix
+V0070,2026-02-04,Sorocaba,Livros,Livro de receitas,2,55,Dinheiro
+V0071,2026-02-05,Sorocaba,Livros,Livro de aventuras,3,42,Dinheiro
+V0072,2026-02-05,Campinas,Acessórios,Estojo,4,22,Pix
+V0073,2026-02-06,Campinas,Acessórios,Mochila,5,95,Dinheiro
+V0074,2026-02-06,Santos,Livros,Livro de aventuras,4,42,Pix
+V0075,2026-02-07,Santos,Papelaria,Caneta,3,3.5,Dinheiro
+V0076,2026-02-07,Sorocaba,Livros,Livro de aventuras,3,42,Cartão
+V0077,2026-02-08,Santos,Acessórios,Estojo,1,22,Pix
+V0078,2026-02-08,Santos,acessórios,Mochila,2,95,Cartão
+V0079,2026-02-09,Santos,Acessórios,Estojo,5,22,Cartão
+V0080,2026-02-09,Sorocaba,Livros,Livro de aventuras,5,42,Dinheiro
+V0081,2026-02-10,Santos,Papelaria,Caneta,5,3.5,Pix
+V0082,2026-02-10,Sorocaba,Acessórios,Estojo,2,22,Pix
+V0083,2026-02-11,Campinas,Livros,Livro de receitas,2,55,Pix
+V0084,2026-02-11,Santos,Acessórios,Estojo,1,22,Pix
+V0085,2026-02-12,Campinas,Livros,Livro de receitas,1,55,Dinheiro
+V0086,2026-02-12,Santos,Livros,Livro de receitas,2,55,Pix
+V0087,2026-02-13,Campinas,Acessórios,Estojo,1,22,Dinheiro
+V0088,2026-02-13,Sorocaba,Papelaria,Caneta,4,3.5,Cartão
+V0089,2026-02-14, Sorocaba ,Papelaria,Caneta,1,3.5,Cartão
+V0090,2026-02-14,Sorocaba,Papelaria,Caderno,5,18,Cartão
+V0091,2026-02-15,Santos,Livros,Livro de aventuras,4,42,Pix
+V0092,2026-02-15,Campinas,Acessórios,Mochila,1,95,Cartão
+V0093,2026-02-16,Sorocaba,Papelaria,Caderno,4,18,Pix
+V0094,2026-02-16,Campinas,Livros,Livro de receitas,5,55,Cartão
+V0095,2026-02-17,Santos,Livros,Livro de receitas,1,55,Cartão
+V0096,2026-02-17,Sorocaba,Papelaria,Caderno,1,18,Pix
+V0097,2026-02-18,Sorocaba,Livros,Livro de aventuras,1,42,Cartão
+V0098,2026-02-18,Santos,Acessórios,Mochila,5,95,Cartão
+V0099,2026-02-19,Campinas,Papelaria,Caderno,5,18,Dinheiro
+V0100,2026-02-19,Sorocaba,Livros,Livro de aventuras,2,42,Cartão
+V0101,2026-02-20,Santos,Papelaria,Caneta,2,3.5,Pix
+V0102,2026-02-20,Santos,Papelaria,Caderno,1,18,Pix
+V0103,2026-02-21,Santos,Papelaria,Caneta,1,3.5,Pix
+V0104,2026-02-21,Santos,Papelaria,Caderno,5,18,Pix
+V0105,2026-02-22,Santos,Papelaria,Caderno,4,18,Dinheiro
+V0106,2026-02-22,Campinas,Papelaria,Caneta,4,3.5,Pix
+V0107,2026-02-23,Campinas,Acessórios,Mochila,5,95,Cartão
+V0108,2026-02-23,Sorocaba,Papelaria,Caderno,5,18,Dinheiro
+V0109,2026-02-24, Sorocaba ,Papelaria,Caneta,3,3.5,Pix
+V0110,2026-02-24,Sorocaba,Papelaria,Caneta,4,3.5,Pix
+V0111,2026-02-25,Sorocaba,Livros,Livro de aventuras,3,42,Cartão
+V0112,2026-02-25,Santos,Acessórios,Mochila,4,95,Dinheiro
+V0113,2026-02-26,Santos,Acessórios,Estojo,5,22,Pix
+V0114,2026-02-26,Santos,Livros,Livro de aventuras,4,42,Pix
+V0115,2026-02-27,Campinas,Livros,Livro de aventuras,3,42,Dinheiro
+V0116,2026-02-27,Santos,Papelaria,Caneta,5,3.5,Pix
+V0117,2026-02-28,Campinas,Papelaria,Caderno,2,18,Pix
+V0118,2026-02-28,Santos,Livros,Livro de aventuras,4,42,Dinheiro
+V0119,2026-03-01,Campinas,Acessórios,Estojo,1,22,Dinheiro
+V0120,2026-03-01,Sorocaba,Papelaria,Caderno,3,18,Cartão
+V0121,2026-03-02,Campinas,Livros,Livro de aventuras,4,42,
+V0122,2026-03-02,Santos,Papelaria,Caderno,3,18,Cartão
+V0123,2026-03-03,Sorocaba,Acessórios,Estojo,3,22,Pix
+V0124,2026-03-03,Santos,Acessórios,Estojo,3,22,Pix
+V0125,2026-03-04,Campinas,Papelaria,Caderno,3,18,Cartão
+V0126,2026-03-04,Campinas,Livros,Livro de aventuras,5,42,Dinheiro
+V0127,2026-03-05,Campinas,Livros,Livro de aventuras,4,42,Dinheiro
+V0128,2026-03-05,Santos,Livros,Livro de aventuras,1,42,Pix
+V0129,2026-03-06,Sorocaba,Acessórios,Estojo,4,22,Cartão
+V0130,2026-03-06,Campinas,Papelaria,Caneta,1,3.5,Cartão
+V0131,2026-03-07,Campinas,Acessórios,Mochila,1,95,Pix
+V0132,2026-03-07,Campinas,Papelaria,Caderno,3,18,Cartão
+V0133,2026-03-08,Sorocaba,Acessórios,Estojo,4,22,Dinheiro
+V0134,2026-03-08,Campinas,Livros,Livro de aventuras,2,42,Dinheiro
+V0135,2026-03-09,Santos,Acessórios,Mochila,5,95,Pix
+V0136,2026-03-09,Campinas,Livros,Livro de receitas,3,55,Pix
+V0137,2026-03-10,Campinas,Papelaria,Caderno,4,18,Pix
+V0138,2026-03-10,Campinas,Papelaria,Caderno,2,18,Pix
+V0139,2026-03-11,Santos,Acessórios,Mochila,3,95,Dinheiro
+V0140,2026-03-11,Santos,Acessórios,Mochila,4,95,Pix
+V0141,2026-03-12,Sorocaba,Acessórios,Estojo,3,22,Pix
+V0142,2026-03-12,Campinas,Acessórios,Estojo,5,22,Pix
+V0143,2026-03-13,Santos,Papelaria,Caderno,5,18,Cartão
+V0144,2026-03-13,Sorocaba,Livros,Livro de aventuras,3,42,Dinheiro
+V0145,2026-03-14,Sorocaba,Papelaria,Caneta,4,3.5,Cartão
+V0146,2026-03-14,Sorocaba,Livros,Livro de receitas,2,55,Cartão
+V0147,2026-03-15,Sorocaba,Livros,Livro de receitas,4,55,Pix
+V0148,2026-03-15,Santos,Livros,Livro de receitas,2,55,Dinheiro
+V0149,2026-03-16,Sorocaba,Papelaria,Caderno,4,18,Dinheiro
+V0150,2026-03-16,Sorocaba,Acessórios,Estojo,3,22,Pix
+V0151,2026-03-17,Sorocaba,Livros,Livro de receitas,4,55,Dinheiro
+V0152,2026-03-17,Campinas,Livros,Livro de aventuras,5,42,Pix
+V0153,2026-03-18,Sorocaba,Livros,Livro de receitas,1,55,Dinheiro
+V0154,2026-03-18,Sorocaba,Acessórios,Mochila,5,95,Pix
+V0155,2026-03-19,Sorocaba,Livros,Livro de aventuras,2,42,Pix
+V0156,2026-03-19,Santos,Livros,Livro de aventuras,3,42,Dinheiro
+V0157,2026-03-20,Santos,Papelaria,Caderno,4,18,Cartão
+V0158,2026-03-20,Sorocaba,Acessórios,Estojo,1,22,Cartão
+V0159,2026-03-21,Campinas,Acessórios,Mochila,1,95,Cartão
+V0160,2026-03-21,Campinas,Acessórios,Mochila,4,95,Cartão
+V0161,2026-03-22,Campinas,Acessórios,Estojo,1,22,Pix
+V0162,2026-03-22,Campinas,Papelaria,Caderno,1,18,Cartão
+V0163,2026-03-23,Campinas,Livros,Livro de aventuras,4,42,Dinheiro
+V0164,2026-03-23,Campinas,Acessórios,Mochila,3,95,Dinheiro
+V0165,2026-03-24,Sorocaba,Papelaria,Caderno,4,18,Cartão
+V0166,2026-03-24,Santos,Livros,Livro de aventuras,5,42,Dinheiro
+V0167,2026-03-25,Sorocaba,Acessórios,Estojo,4,22,Cartão
+V0168,2026-03-25,Campinas,Livros,Livro de receitas,4,55,Pix
+V0169,2026-03-26,Sorocaba,Papelaria,Caneta,1,3.5,Pix
+V0170,2026-03-26,Sorocaba,Acessórios,Estojo,5,22,Pix
+V0171,2026-03-27,Santos,Acessórios,Estojo,2,22,Pix
+V0172,2026-03-27,Santos,Papelaria,Caderno,1,18,Cartão
+V0173,2026-03-28,Campinas,Papelaria,Caneta,4,3.5,Dinheiro
+V0174,2026-03-28,Campinas,Acessórios,Mochila,4,95,Cartão
+V0175,2026-03-29,Santos,Acessórios,Estojo,5,22,Dinheiro
+V0176,2026-03-29,Campinas,Livros,Livro de aventuras,2,42,Cartão
+V0177,2026-03-30,Santos,Acessórios,Estojo,4,22,Pix
+V0178,2026-03-30,Campinas,Acessórios,Estojo,2,22,Pix
+V0179,2026-03-31,Santos,Livros,Livro de aventuras,4,42,Pix
+V0180,2026-03-31,Campinas,Acessórios,Estojo,2,22,Cartão
+V0010,2026-01-05,Campinas,Papelaria,Caneta,1,3.5,Dinheiro
+V0020,2026-01-10,Santos,Papelaria,Caneta,1,3.5,Cartão

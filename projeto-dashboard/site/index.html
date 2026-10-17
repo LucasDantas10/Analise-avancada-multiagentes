@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Acesso demonstrativo ao painel de vendas da papelaria.">
+    <title>Papelaria | Entrar no painel</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+  </head>
+  <body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o formulário de acesso</a>
+    <main id="conteudo" class="pagina-login">
+      <section class="apresentacao" aria-labelledby="titulo-apresentacao">
+        <a class="marca" href="./" aria-label="Painel de vendas da papelaria">
+          <span class="marca-icone" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><path d="M8 4.5h11l5 5v17H8z"/><path d="M19 4.5v6h5M12 16h8M12 20h8"/></svg></span>
+          <span><strong>Papelaria</strong><small>INTELIGÊNCIA DE VENDAS</small></span>
+        </a>
+        <div class="apresentacao-texto">
+          <span class="selo-periodo"><span aria-hidden="true">●</span> PRIMEIRO TRIMESTRE · 2026</span>
+          <h1 id="titulo-apresentacao">Decisões melhores começam com uma boa visão.</h1>
+          <p>Entre no painel para explorar vendas, categorias e tendências do período.</p>
+        </div>
+        <div class="arte-decorativa" aria-hidden="true"><span class="arte-linha linha-1"></span><span class="arte-linha linha-2"></span><span class="arte-linha linha-3"></span><span class="arte-ponto ponto-1"></span><span class="arte-ponto ponto-2"></span><span class="arte-ponto ponto-3"></span><span class="arte-legenda legenda-1">Jan</span><span class="arte-legenda legenda-2">Fev</span><span class="arte-legenda legenda-3">Mar</span></div>
+        <p class="rodape-apresentacao">Painel demonstrativo · Dados de vendas, jan–mar 2026</p>
+      </section>
+
+      <section class="area-formulario" aria-labelledby="titulo-login">
+        <div class="cartao-login">
+          <div class="icone-acesso" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 3 5 6v5c0 4.7 3 8.3 7 10 4-1.7 7-5.3 7-10V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <p class="sobretitulo">ÁREA DE ACESSO</p>
+          <h2 id="titulo-login">Boas-vindas</h2>
+          <p class="instrucao">Informe suas credenciais demonstrativas para continuar.</p>
+          <form id="formulario-login" novalidate>
+            <div class="campo"><label for="usuario">Usuário</label><input id="usuario" name="username" type="text" autocomplete="username" required placeholder="Digite seu usuário"></div>
+            <div class="campo"><label for="senha">Senha</label><input id="senha" name="password" type="password" autocomplete="current-password" required placeholder="Digite sua senha"></div>
+            <p id="erro-login" class="erro-login" role="alert" hidden>Usuário ou senha incorretos. Confira os dados de demonstração.</p>
+            <button id="entrar-painel" class="botao-entrar" type="submit">Entrar no painel <span aria-hidden="true">→</span></button>
+          </form>
+          <div class="credenciais-demo"><div class="demo-cabecalho"><span class="demo-ponto" aria-hidden="true"></span><strong>ACESSO DE DEMONSTRAÇÃO</strong></div><p>Usuário <code>admin</code><br>Senha <code>papelaria2026</code></p></div>
+          <p class="aviso-seguranca"><strong>Importante:</strong> este login é apenas uma demonstração. A credencial e os dados do site estático são públicos; isso não protege informações privadas.</p>
+        </div>
+        <p class="rodape-formulario">Acesso privado requer autenticação no servidor.</p>
+      </section>
+    </main>
+  </body>
+</html>
